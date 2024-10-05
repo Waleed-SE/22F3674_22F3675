@@ -8,6 +8,10 @@ public class Library {
 	}
 
 	public void addBook(String bookName) {
+		if(bookName == null) {
+			System.out.println("Null cannot be added to library");
+			return;
+		}
 		books.add(bookName);
 		System.out.println(bookName + " added to library");
 	}
